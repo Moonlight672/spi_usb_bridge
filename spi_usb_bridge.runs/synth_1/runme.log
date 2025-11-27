@@ -1,0 +1,279 @@
+
+*** Running vivado
+    with args -log top_spi_flash_usb_bridge.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_spi_flash_usb_bridge.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Wed Nov 26 19:05:55 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_spi_flash_usb_bridge.tcl -notrace
+Command: synth_design -top top_spi_flash_usb_bridge -part xc7a100tifgg676-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100ti'
+INFO: [Device 21-403] Loading part xc7a100tifgg676-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9416
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1217.043 ; gain = 493.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_spi_flash_usb_bridge' [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/top_spi_flash_usb_bridge.v:15]
+INFO: [Synth 8-6157] synthesizing module 'ft601_byte_if' [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/ft601_byte_if.v:12]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/ft601_byte_if.v:71]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/ft601_byte_if.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'ft601_byte_if' (0#1) [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/ft601_byte_if.v:12]
+INFO: [Synth 8-6157] synthesizing module 'spi_flash_bridge_core' [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/spi_flash_bridge_core.v:23]
+	Parameter MAGIC bound to: -559038801 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'spi_master_byte' [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/spi_master_byte.v:7]
+	Parameter CLK_DIV bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/spi_master_byte.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'spi_master_byte' (0#1) [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/spi_master_byte.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'spi_flash_bridge_core' (0#1) [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/spi_flash_bridge_core.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_spi_flash_usb_bridge' (0#1) [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/top_spi_flash_usb_bridge.v:15]
+WARNING: [Synth 8-6014] Unused sequential element spi_tx_size_reg was removed.  [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/spi_flash_bridge_core.v:166]
+WARNING: [Synth 8-6014] Unused sequential element line_mode_reg was removed.  [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/spi_flash_bridge_core.v:167]
+WARNING: [Synth 8-6014] Unused sequential element spi_mode_reg was removed.  [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/sources_1/new/spi_flash_bridge_core.v:168]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1326.117 ; gain = 602.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1326.117 ; gain = 602.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1326.117 ; gain = 602.898
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1326.117 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/constrs_1/new/top_spi_flash_usb_bridge.xdc]
+Finished Parsing XDC File [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/constrs_1/new/top_spi_flash_usb_bridge.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Xilinx/spi_usb_bridge/spi_usb_bridge.srcs/constrs_1/new/top_spi_flash_usb_bridge.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_spi_flash_usb_bridge_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_spi_flash_usb_bridge_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1398.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1398.609 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1398.609 ; gain = 675.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tifgg676-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1398.609 ; gain = 675.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1398.609 ; gain = 675.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'ft601_byte_if'
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'ft601_byte_if'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'spi_master_byte'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  W_IDLE |                                0 |                               00
+                  W_WAIT |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'sequential' in module 'ft601_byte_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  R_IDLE |                                0 |                               00
+                  R_WAIT |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'sequential' in module 'ft601_byte_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                   TRANS |                              010 |                               01
+                    DONE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'spi_master_byte'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1398.609 ; gain = 675.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	  11 Input   32 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 13    
+	   3 Input    1 Bit        Muxes := 10    
+	  11 Input    1 Bit        Muxes := 6     
+	   8 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (u_ft601_byte_if/FSM_sequential_wstate_reg) is unused and will be removed from module top_spi_flash_usb_bridge.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1398.609 ; gain = 675.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1529.598 ; gain = 806.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1566.055 ; gain = 842.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1566.055 ; gain = 842.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1779.547 ; gain = 1056.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1779.547 ; gain = 1056.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1779.547 ; gain = 1056.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1779.547 ; gain = 1056.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1779.547 ; gain = 1056.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1779.547 ; gain = 1056.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    19|
+|3     |LUT1   |     1|
+|4     |LUT2   |    44|
+|5     |LUT3   |     3|
+|6     |LUT4   |    47|
+|7     |LUT5   |    14|
+|8     |LUT6   |    59|
+|9     |FDCE   |   144|
+|10    |FDPE   |     4|
+|11    |IBUF   |    12|
+|12    |OBUF   |     6|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1779.547 ; gain = 1056.328
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 1779.547 ; gain = 983.836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1779.547 ; gain = 1056.328
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1786.637 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1789.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 58e43116
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:48 . Memory (MB): peak = 1789.379 ; gain = 1270.359
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1789.379 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Xilinx/spi_usb_bridge/spi_usb_bridge.runs/synth_1/top_spi_flash_usb_bridge.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_spi_flash_usb_bridge_utilization_synth.rpt -pb top_spi_flash_usb_bridge_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 26 19:06:49 2025...

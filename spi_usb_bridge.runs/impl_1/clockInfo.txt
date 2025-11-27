@@ -1,0 +1,10 @@
+-------------------------------------
+| Tool Version : Vivado v.2025.1
+| Date         : Wed Nov 26 19:08:13 2025
+| Host         : Emiya
+| Design       : design_1
+| Device       : xc7a100ti-fgg676-1L-I-
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+

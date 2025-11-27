@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Nov 26 19:13:24 2025
+# Process ID         : 17600
+# Current directory  : E:/Xilinx/spi_usb_bridge/spi_usb_bridge.runs/impl_1
+# Command line       : vivado.exe -log top_spi_flash_usb_bridge.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_spi_flash_usb_bridge.tcl -notrace
+# Log file           : E:/Xilinx/spi_usb_bridge/spi_usb_bridge.runs/impl_1/top_spi_flash_usb_bridge.vdi
+# Journal file       : E:/Xilinx/spi_usb_bridge/spi_usb_bridge.runs/impl_1\vivado.jou
+# Running On         : Emiya
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16898 MB
+# Swap memory        : 8321 MB
+# Total Virtual      : 25220 MB
+# Available Virtual  : 12582 MB
+#-----------------------------------------------------------
+source top_spi_flash_usb_bridge.tcl -notrace
